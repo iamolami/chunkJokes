@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.58%;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+}
+.header__navigation {
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  padding: 1.2rem 10rem;
+  text-align: right;
+}
+.header__li {
+  display: inline-block;
+}
+.header__li:not(:first-child) {
+  margin-left: 2rem;
+}
+.header__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.header__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/assets_Homework_Front-End_01/bitmap.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+.header__box {
+  height: 25vh;
+}
+.header__main {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #CFB995;
+  margin-bottom: 0.8rem;
+}
+.header__desc {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.header__form {
+  margin-top: 2.5rem;
+}
+.header__input {
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-family: inherit;
+  background-color: transparent;
+  outline: none;
+}
+.header__input::placeholder {
+  color: #FFFFFF;
+}
+
+.main {
+  padding: 2rem 10rem;
+}
+.main__btnGrid {
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template: repeat(7, 1fr)/repeat(7, 1fr);
+  gap: 8px 8px;
+}
+.main__button {
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.main__grid {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  gap: 8px 8px;
+  margin-top: 1rem;
+}
+.main__block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.main__block:hover {
+  box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+}
+.main__text {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #5e5e5e;
+  margin-bottom: 1rem;
+}
+.main__box {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.main__main {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #303030;
+  margin-left: 1rem;
+}
+.main__stats {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+.main__btn {
+  background-color: transparent;
+  border: none;
+  color: #CFB995;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+.main__details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.main__detailsBox {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.main__detailsBox:hover {
+  box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 3px 0px 15px 1px rgba(0, 0, 0, 0.49);
+}
+.main__detailsMain {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #CFB995;
+}
+.main__detailsInfo {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #5e5e5e;
+  margin: 1.5rem 0rem;
+}
+.main__detailsBtn {
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.main__likeBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  background-color: #ff5b5b;
+}
+.main__likeBtn img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=App.css.map */

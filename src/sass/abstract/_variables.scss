@@ -1,0 +1,14 @@
+$path: "./fonts/";
+$familyName: 'Montserrat';
+
+$color-black: #303030;
+$primary-color: #CFB995;
+$color-gray: #5e5e5e;
+$color-white: #FFFFFF;
+
+@include font-face($familyName, '#{$path}#{$familyName}-ExtraLight', '', 'Montserrat-ExtraLight', 300, normal);
+@include font-face($familyName, '#{$path}#{$familyName}-Light', '', 'Montserrat-Light', 400, normal);
+@include font-face($familyName, '#{$path}#{$familyName}-Regular', '', 'Montserrat-Regular', 500, normal);
+@include font-face($familyName, '#{$path}#{$familyName}-Bold', '', 'Montserrat-Bold', 700, normal);
+@include font-face($familyName, '#{$path}#{$familyName}-ExtraBold', '', 'Montserrat-ExtraBold', 800, normal);
+@include font-face($familyName, '#{$path}#{$familyName}-Black', '', 'Montserrat-Black', 900, normal);

@@ -1,0 +1,76 @@
+.header {
+    position: relative;
+
+    &__navigation {
+        width: 100%;
+        height: 100%;
+        background-color: $color-black;
+        padding: 1.2rem 10rem;
+        text-align: right;
+    }
+
+    &__li {
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__link {
+        font-size: .9rem;
+        font-weight: 500;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("/public/assets/assets_Homework_Front-End_01/bitmap.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+    }
+
+    &__box {
+        height: 25vh;
+    }
+
+    &__main {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: .8rem;
+    }
+
+    &__desc {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $color-white;
+    }
+
+    &__form {
+        margin-top: 2.5rem;
+    }
+
+    &__input {
+        padding: .5rem 2rem;
+        border-radius: 3px;
+        border: 1px solid $color-white;
+        font-size: .9rem;
+        font-weight: 500;
+        color: $color-white;
+        font-family: inherit;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+            color: $color-white;
+        }
+    }
+}
